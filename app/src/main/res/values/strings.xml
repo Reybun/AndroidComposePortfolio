@@ -1,0 +1,48 @@
+<resources>
+    <string name="app_name">Yann\'s Portfolio</string>
+    <string name="navigationItem_title_profile">Profile</string>
+    <string name="navigationItem_title_experiences">Expériences</string>
+    <string name="navigationItem_title_skills">Skills</string>
+    <string name="navigationItem_title_bonus">Bonus</string>
+    <string name="profileScreen_informationItem_title_developer">Android Developer</string>
+    <string name="profileScreen_informationItem_title_app">Mobile app in full compose </string>
+    <string name="profileScreen_informationItem_title_linkedin">My LinkedIn</string>
+    <string name="profileScreen_informationItem_title_github">Here the git of this project</string>
+    <string name="profileScreen_informationItem_title_age">%1$d years</string>
+    <string name="profileScreen_description">\"
+        Thriving on challenge, I am a %1$d years old developer, who loves  learning and working with new technologies and especially with Android. Always looking for the best code possible
+\"</string>
+    <string name="bonusScreen_ready">\"Ready to discover my favourite musics ?\"</string>
+    <string name="profileScreen_intent_mail_subject">I saw your CV !</string>
+    <string name="profileScreen_intent_mail_body">Dear Yann,</string>
+    <string name="skillScreen_title_knowledge">Knowledge</string>
+    <string name="skillScreen_title_myself">Me and myself</string>
+    <string name="skillScreen_skill_smiling">Smiling</string>
+    <string name="skillScreen_skill_curious">Curious</string>
+    <string name="skillScreen_skill_gardening">Gardening</string>
+    <string name="skillScreen_skill_agility">Agility Management</string>
+    <string name="skillScreen_skill_team">Team management</string>
+    <string name="skillScreen_skill_quotation">Quotation</string>
+    <string name="skillScreen_skill_invoicing">Invoicing</string>
+    <string name="skillScreen_skill_acceptance">Acceptance, support call for tender</string>
+    <string name="skillScreen_skill_retroplanning">Retroplanning of projects</string>
+    <string name="experienceScreen_company_mission_modularisation">Contributing to the modularisation of the Android application</string>
+    <string name="experienceScreen_company_mission_quality">Improving application quality</string>
+    <string name="experienceScreen_company_mission_facilitating">Facilitating meetings in accordance with SrumBan agility</string>
+    <string name="experienceScreen_company_mission_design">Participating in the design phase</string>
+    <string name="experienceScreen_company_mission_specification">Writing the technical specifications</string>
+    <string name="experienceScreen_company_mission_test">Writing unit and automated tests</string>
+    <string name="experienceScreen_company_role_manager">Account Manager</string>
+    <string name="experienceScreen_company_mission_relation">Negotiation and customer relations</string>
+    <string name="experienceScreen_company_mission_monotoring">Monitoring, reporting and strategic recommendations</string>
+    <string name="experienceScreen_company_role_web">Web Developer</string>
+    <string name="experienceScreen_company_mission_ad">Development of advertising banners for the web</string>
+    <string name="experienceScreen_company_mission_graphic">Graphic design (creation of static images and website skins)</string>
+    <string name="experienceScreen_company_mission_training">Training as a Digital Project Manager</string>
+    <string name="experienceScreen_company_skill_manager">Account Manager training</string>
+    <string name="experienceScreen_category_job">Jobs</string>
+    <string name="experienceScreen_rush_desc">Desktop application allowing (by connecting through Steam) to generate and launch CSGO servers in the cloud in 1 click.</string>
+    <string name="experienceScreen_coromap_desc1">My first android experience</string>
+    <string name="experienceScreen_coromap_desc2">An interactive world map of the Coronavirus that allows to see the status of each country according to different factors such as the number of infected.</string>
+    <string name="experienceScreen_category_student">Student projects</string>
+</resources>
