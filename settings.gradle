@@ -12,5 +12,5 @@ dependencyResolutionManagement {
         mavenCentral()
     }
 }
-rootProject.name = "CV Player One"
+rootProject.name = "YannPortfolio"
 include ':app'
