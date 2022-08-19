@@ -178,6 +178,10 @@ class BonusScreen() {
                                 modifier = Modifier
                                     .size(50.dp)
                                     .noRippleClickable {
+                                        mediaPlayer.stop()
+                                        mediaPlayer.reset()
+                                        data.close()
+                                        timer.cancel()
                                         if (selectedTrack.value == 0) {
                                             selectedTrack.value = uriStrings.size - 1
                                         } else {
