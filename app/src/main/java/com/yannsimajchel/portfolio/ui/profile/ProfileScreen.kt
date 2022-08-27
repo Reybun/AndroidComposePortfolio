@@ -16,6 +16,7 @@ import androidx.compose.foundation.shape.RoundedCornerShape
 import androidx.compose.material.MaterialTheme
 import androidx.compose.material.Text
 import androidx.compose.runtime.Composable
+import androidx.compose.runtime.getValue
 import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.draw.alpha
@@ -33,6 +34,7 @@ import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
 import androidx.lifecycle.viewModelScope
 import androidx.navigation.NavController
+import com.airbnb.lottie.compose.*
 import com.yannsimajchel.portfolio.MainActivity
 import com.yannsimajchel.portfolio.R
 import com.yannsimajchel.portfolio.ui.NavigationItem
@@ -125,7 +127,7 @@ class ProfileScreen(
      */
     private fun openGithub() {
         try {
-            val url = "https://github.com/Reybun"
+            val url = "https://github.com/Reybun/AndroidComposePortfolio"
             val intent = Intent(Intent.ACTION_VIEW)
             intent.data = Uri.parse(url)
             activity.startActivity(intent)
@@ -153,15 +155,16 @@ class ProfileScreen(
             toolbar = {
                 val textSize = (20 + (30 - 18) * state.toolbarState.progress).sp
 
-                Column(
+                Box(
                     modifier = Modifier
                         .background(MaterialTheme.colors.primary)
                         .fillMaxWidth()
                         .height(250.dp)
                         .road(Alignment.Center, Alignment.TopCenter),
-                    horizontalAlignment = Alignment.CenterHorizontally,
-                    verticalArrangement = Arrangement.Center
                 ) {
+                    AnimationBg(
+                        Modifier.alpha(state.toolbarState.progress)
+                    )
                     Image(
                         painter = painterResource(R.drawable.pp),
                         contentDescription = "profile picture",
@@ -169,6 +172,7 @@ class ProfileScreen(
                         modifier = Modifier
                             .alpha(state.toolbarState.progress)
                             .size(120.dp)
+                            .align(Alignment.Center)
                             .clip(CircleShape)
                             .border(4.dp, MaterialTheme.colors.onPrimary, CircleShape)
                     )
@@ -373,6 +377,22 @@ class ProfileScreen(
             }
 
         }
+    }
+
+    @Composable
+    fun AnimationBg(modifier: Modifier) {
+        val composition by rememberLottieComposition(LottieCompositionSpec.RawRes(R.raw.lines))
+        val progress by animateLottieCompositionAsState(
+            composition,
+            iterations = LottieConstants.IterateForever,
+        )
+
+        LottieAnimation(
+            composition,
+            modifier = modifier,
+            progress = { progress },
+            contentScale = ContentScale.FillHeight,
+        )
     }
 }
 

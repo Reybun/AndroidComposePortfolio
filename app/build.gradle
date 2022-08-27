@@ -81,5 +81,6 @@ dependencies {
 
     //Design
     implementation "androidx.palette:palette:1.0.0"
+    implementation "com.airbnb.android:lottie-compose:$lottie_version"
 
 }
